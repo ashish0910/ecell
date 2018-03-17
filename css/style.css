@@ -15,6 +15,16 @@ body {
   overflow-x: hidden;
 }
 
+.header__logo-box {
+  position: absolute;
+  top: -0.3rem;
+  left: 2rem;
+ }
+
+.header__logo {
+  height: 7rem;
+ }
+
 ol, ul {
   list-style: none;
 }
@@ -168,8 +178,10 @@ HEADER
   padding: 0px;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 15px 0px;
-  margin-top: 6px;
+  padding: 10px 32px;
+  margin-top: 10px;
+
+  
 }
 
 .navbar-default .navbar-nav>li>a {
