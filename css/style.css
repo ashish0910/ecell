@@ -176,13 +176,9 @@ HEADER
 }
 
 .navbar-brand {
-  padding: 0px;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 10px 32px;
-  margin-top: 10px;
-
-  
+  padding: 20px 0;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -503,7 +499,7 @@ TESTIMONIAL
 ************************************
 ***********************************/
 
-#testimonial {
+/* #testimonial {
   background: url('../img/bg.jpg') no-repeat;
   background-size: cover;
   min-height: 390px;
@@ -567,6 +563,214 @@ TESTIMONIAL
 .testimonial-item ul li blockquote::after {
   content: '”';
   right: 30px;
+} */
+
+#testimonial{
+  padding: 1.5rem;  
+	color:#444;
+	background:#e2e7eb;
+	font:300 18px/18px Roboto, sans-serif;
+}
+
+.pull-left{float:left}
+.pull-right{float:right}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+.author-quote-wrap .author-quote,
+.author-quote-wrap .author-photo:before{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+  position:absolute;
+}
+
+.author-quote-wrap{
+	color:#fff;
+	width:90%;
+	overflow:hidden;
+	max-width:560px;
+	min-height:390px;
+	margin:5rem auto;
+	background:#17a0ff;
+	position:relative;
+	box-shadow:0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+}
+.author-quote-wrap .author-quote{
+	display:none;
+}
+.author-quote-wrap .toggle-quote{
+	display:none;
+}
+.author-quote-wrap .toggle-quote:checked + .author-quote{
+	display:block;
+}
+.author-quote-wrap .author-quote a{
+	color:inherit;
+	text-decoration:none;
+}
+.author-quote-wrap .author-photo,
+.author-quote-wrap .quote-content{
+	height:100%;
+	position:relative;
+}
+.author-quote-wrap .author-photo{
+	width:140px;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	quotes:'\201C''\201D''\2018''\2019';
+}
+.author-quote-wrap .author-photo.photo-a{
+	background-image:url(https://www.vccircle.com/wp-content/uploads/2015/07/VCCircle_Kunal_Bahl_8-4.jpg);
+}
+.author-quote-wrap .author-photo.photo-b{
+	background-image:url(https://i0.wp.com/in.dealizen.com/feed/wp-content/uploads/2017/03/vijay-shekhar-sharma.jpg?fit=672%2C504&ssl=1);
+}
+.author-quote-wrap .author-photo.photo-c{
+	background-image:url(https://img.etimg.com/thumb/msid-49667566,width-643,imgsize-246155,resizemode-4/hire-only-a-players-who-can-do-the-job-better-than-you-practo-founder-shashank-nd.jpg);
+}
+.author-quote-wrap .author-photo.photo-d{
+	background-image:url(http://www.forbesindia.com/fbimages/900x600/proportional/jpeg/media/images/2015/Jul/topimg_27805_rahul_yadav.jpg);
+}
+.author-quote-wrap .author-photo.photo-e{
+	background-image:url(http://bsmedia.business-standard.com/_media/bs/img/article/2017-02/09/full/1486582104-7195.jpg);
+}
+.author-quote-wrap .author-photo:before{
+	content:'';
+	background:rgba(22,160,255,.5);
+}
+.author-quote-wrap .author-photo:after{
+	top:15px;
+	left:60px;
+	font-size:72px;
+	line-height:72px;
+	position:absolute;
+	font-family:serif;
+	content:open-quote;
+}
+.author-quote-wrap .author-photo .navigate{
+	left:15px;
+	z-index:10;
+	right:15px;
+	bottom:15px;
+	position:absolute;
+	text-align:center;
+}
+.author-quote-wrap .author-photo .navigate .label{
+	width:15px;
+	height:30px;
+	cursor:pointer;
+	position:relative;
+	display:inline-block;
+}
+.author-quote-wrap .author-photo .navigate .label.left{
+	left:-30px;
+}
+.author-quote-wrap .author-photo .navigate .label.right{
+	right:-30px;
+}
+.author-quote-wrap .author-photo .navigate .label.disabled{
+	cursor:not-allowed;
+}
+.author-quote-wrap .author-photo .navigate .label:before,
+.author-quote-wrap .author-photo .navigate .label:after{
+	content:'';
+	height:2px;
+	width:15px;
+	background:#ccc;
+	position:absolute;
+}
+.author-quote-wrap .author-photo .navigate .label:before{
+	top:62%;
+}
+.author-quote-wrap .author-photo .navigate .label:after{
+	bottom:62%;
+}
+.author-quote-wrap .author-photo .navigate .label.left:before,
+.author-quote-wrap .author-photo .navigate .label.right:after{
+	transform:rotate(45deg);
+}
+.author-quote-wrap .author-photo .navigate .label.right:before,
+.author-quote-wrap .author-photo .navigate .label.left:after{
+	transform:rotate(-45deg);
+}
+.author-quote-wrap .author-photo .navigate .label.left:before,
+.author-quote-wrap .author-photo .navigate .label.left:after{
+	left:0;
+}
+.author-quote-wrap .author-photo .navigate .label.right:before,
+.author-quote-wrap .author-photo .navigate .label.right:after{
+	right:0;
+}
+.author-quote-wrap .author-photo .navigate .label.disabled:before,
+.author-quote-wrap .author-photo .navigate .label.disabled:after,
+.author-quote-wrap .author-photo .navigate .label.disabled:hover:before,
+.author-quote-wrap .author-photo .navigate .label.disabled:hover:after{
+	background:#bbb;
+}
+.author-quote-wrap .author-photo .navigate .label:hover:before,
+.author-quote-wrap .author-photo .navigate .label:hover:after{
+	background:#fff;
+}
+
+.author-quote-wrap .quote-content{
+	padding:15px;
+	width:calc(560px - 140px);
+}
+.quote-content .quote-like{
+	font-size:12px;
+	font-weight:400;
+	padding:4px 8px;
+	border-radius:15px;
+	display:inline-block;
+	background:rgba(0,0,0,.2);
+}
+.quote-content .quote-like .love{
+    width:18px;
+    height:10px;
+    position:relative;
+	display:inline-block;
+}
+.quote-content .quote-like .love:before,
+.quote-content .quote-like .love:after {
+    top:0;
+    left:7px;
+    content:'';
+    width:7px;
+    height:12px;
+    background:#fff;
+    position:absolute;
+	transform:rotate(-45deg);
+	transform-origin:0 100%;
+    border-radius:20px 20px 0 0;
+}
+.quote-content .quote-like .love:after {
+    left:0;
+	transform:rotate(45deg);
+	transform-origin :100% 100%;
+}
+
+.quote-content .quote-text,
+.quote-content .quote-author{
+	text-transform:uppercase;
+}
+.quote-content .quote-text{
+	font-size:30px;
+	font-weight:900;
+  line-height:55px;
+
+}
+.quote-content .quote-author {
+	bottom:30px;
+	font-size:18px;
+	font-weight:500;
+	position:absolute;
+}
+
+.quote-content .quote-author:before{
+	content:'- ';
 }
 
 /***********************************
@@ -574,6 +778,10 @@ TESTIMONIAL
 Blog
 ************************************
 ***********************************/
+
+#blog{
+  margin-top: -5rem;
+}
 
 .blog-info h2 {
   text-transform: capitalize;
@@ -713,6 +921,10 @@ contact
 
 .loction-info p i {
   color: #be9e21;
+}
+
+.contact-header{
+  color:#fff;
 }
 
 /***********************************
@@ -888,7 +1100,7 @@ social media buttons
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .fa-facebook {
@@ -902,8 +1114,8 @@ social media buttons
   color: white;
 }
 
-.fa-youtube {
-  background: #bb0000;
+.fa-linkedin {
+  background: rgba(29, 107, 208, 0.795);
   color: white;
 }
 
@@ -914,13 +1126,3 @@ social media buttons
 
 
 
-/* body{background:#59ABE3;margin:0}
-.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
-h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
-input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
-input:focus{border-bottom:2px solid #78788c}
-p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
-button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
-button:hover{background:#78788c;color:#fff}
-div{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
-span{margin:0 5px 0 15px} */
