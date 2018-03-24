@@ -15,14 +15,14 @@ body {
   overflow-x: hidden;
 }
 
-.header__logo-box {
-  position: absolute;
-  top: -0.3rem;
-  left: 2rem;
+.logo-box {
+  margin-top: -4rem;
+  margin-left: 13rem;
  }
 
-.header__logo {
-  height: 7rem;
+.logo {
+  height: 22rem;
+
  }
 
 ol, ul {
@@ -142,7 +142,7 @@ HEADER
 .navbar-default {
   background-color: transparent;
   border: 0px;
-  padding: 20px 0;
+  padding: 20px 0px;
   transition: all 0.3s;
 }
 
@@ -168,6 +168,7 @@ HEADER
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -655,12 +656,13 @@ contact
   padding: 6px 20px;
 }
 
+
 .form-control {
   background-color: transparent;
   border-radius: 0px;
   color: #be9e21 !important;
   border-color: #be9e21;
-}
+  }
 
 .form-control:focus {
   border-color: #be9e21;
@@ -894,18 +896,9 @@ social media buttons
   color: white;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
 
 .fa-google {
   background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
   color: white;
 }
 
@@ -919,78 +912,15 @@ social media buttons
   color: white;
 }
 
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
 
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
 
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
+/* body{background:#59ABE3;margin:0}
+.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+input:focus{border-bottom:2px solid #78788c}
+p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
+button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+button:hover{background:#78788c;color:#fff}
+div{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
+span{margin:0 5px 0 15px} */
