@@ -566,9 +566,10 @@ TESTIMONIAL
 } */
 
 #testimonial{
-  padding: 1.5rem;  
+  background-image: url(https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=613e60e84c5111cb2753536993debf0a);
+  background-size: cover;
+  padding: 5rem;  
 	color:#444;
-	background:#e2e7eb;
 	font:300 18px/18px Roboto, sans-serif;
 }
 
