@@ -15,15 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-.logo-box {
-  margin-top: -4rem;
-  margin-left: 13rem;
- }
 
-.logo {
-  height: 22rem;
-
- }
 
 ol, ul {
   list-style: none;
@@ -133,7 +125,7 @@ HEADER
 }
 
 .bg-color {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(8, 2, 2, 0.5);
   min-height: 650px;
 }
 
@@ -148,7 +140,7 @@ HEADER
 
 @media (max-width: 768px) {
 	.navbar-default {
-		background: rgba(64, 75, 97, 0.9);
+		background: #005792;
 	}
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -157,7 +149,7 @@ HEADER
 
 .top-nav-collapse {
   padding: 0;
-  background: rgba(64, 75, 97, 0.9);
+  background: #005792;
 }
 
 .logo-dec {
@@ -194,13 +186,13 @@ HEADER
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color: #be9e21;
+  color:#48C0D3;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   background-color: transparent;
-  color: #be9e21;
+  color:#48C0D3;
 }
 
 .banner-info {
@@ -499,72 +491,6 @@ TESTIMONIAL
 ************************************
 ***********************************/
 
-/* #testimonial {
-  background: url('../img/bg.jpg') no-repeat;
-  background-size: cover;
-  min-height: 390px;
-}
-
-.bg-testicolor {
-  background-color: RGBA(73, 84, 105, 0.61);
-  min-height: 390px;
-}
-
-.white {
-  color: #fff !important;
-}
-
-.testimonial-item ul li blockquote {
-  font-size: 18px;
-  line-height: 32px;
-  color: #fff;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px #333;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  margin: 20px 0;
-  padding: 0 80px;
-  position: relative;
-  border: 0;
-}
-
-.testimonial-item ul li small {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-  text-shadow: 1px 1px 2px #333;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-}
-
-.bx-viewport {
-  height: 235px !important;
-  background-color: transparent !important;
-  border: 0px none !important;
-  box-shadow: none !important;
-}
-
-.testimonial-item ul li blockquote::before {
-  content: '“';
-  left: 30px;
-}
-
-.testimonial-item ul li blockquote::before, .testimonial-item ul li blockquote::after {
-  position: absolute;
-  font-weight: 300;
-  font-size: 3em;
-  font-family: Georgia, serif;
-  color: #ccc;
-  top: 62%;
-}
-
-.testimonial-item ul li blockquote::after {
-  content: '”';
-  right: 30px;
-} */
-
 #testimonial{
   background-image: url(https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=613e60e84c5111cb2753536993debf0a);
   background-size: cover;
@@ -852,15 +778,24 @@ contact
 ***********************************/
 
 #contact {
-  background-color: rgb(73, 84, 105);
+  background-color:#005792;
+}
+
+.logo-box {
+  margin-top: -4rem;
+  margin-left: 10rem;
+ }
+
+.logo {
+  height: 22.5rem;
 }
 
 .btn-submit, .btn-submit:hover, .btn-submit:focus {
   background-color: transparent;
   border-radius: 60px;
-  color: #be9e21;
+  color: #48C0D3;
   font-weight: 400;
-  border: 1px solid #be9e21;
+  border: 1px solid #48C0D3;
   font-size: 14px;
   padding: 6px 20px;
 }
@@ -869,12 +804,14 @@ contact
 .form-control {
   background-color: transparent;
   border-radius: 0px;
-  color: #be9e21 !important;
-  border-color: #be9e21;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 17px;
+  border-color: #48C0D3;
   }
 
 .form-control:focus {
-  border-color: #be9e21;
+  border-color: #48C0D3;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
@@ -885,11 +822,11 @@ contact
 }
 
 .validation {
-  color: red;
+  color: #fff;
   display: none;
   margin: 0 0 20px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #sendmessage {
@@ -1102,6 +1039,7 @@ social media buttons
 
 .fa:hover {
     opacity: 0.8;
+    color: #fff;
 }
 
 .fa-facebook {
@@ -1121,7 +1059,7 @@ social media buttons
 }
 
 .fa-instagram {
-  background: #125688;
+  background: #0e6caf;
   color: white;
 }
 
