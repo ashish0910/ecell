@@ -15,6 +15,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/team.css">
   <!-- =======================================================
     Theme Name: Baker
     Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
@@ -45,11 +47,10 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#main-header">Home</a></li>
                   <li class=""><a href="#feature">About</a></li>
-                  <li class=""><a href="#service">Services</a></li>
+                  <li class=""><a href="#team">Team</a></li>
                   <li class=""><a href="#portfolio">Startups</a></li>
                   <li class=""><a href="#testimonial">Testimonial</a></li>
-                  <li class=""><a href="blog.php">Blog</a></li>
-                  <li class=""><a href="#blog">Events</a></li>                  
+                  <li class=""><a href="#blog">Blog</a></li>
                   <li class=""><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
@@ -279,7 +280,7 @@
           </div>
     </section>
     <!---->
-    <section id="blog" class="section-padding wow fadeInUp delay-05s">
+    <!-- <section id="blog" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -349,10 +350,92 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!---->
 
     <!---->
+    <section id="team">
+        <h2 class="team">team</h2>
+        <div class="slider--teams">
+            <div class="slider--teams__team">
+              <ul id="list" class="cf">
+                
+                <li>
+                  <figure class="active">
+                    <div>
+                      <div></div>
+                    </div>
+                    <figcaption>
+                      <h2>Billie</h2>
+                      <p>Head of Team</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure>
+                    <div>
+                      <div></div>
+                    </div>
+                    <figcaption>
+                      <h2>Roger</h2>
+                      <p>Art Director</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure>
+                    <div>
+                      <div></div>
+                    </div>
+                    <figcaption>
+                      <h2>Wendy</h2>
+                      <p>Designer</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure>
+                    <div>
+                      <div></div>
+                    </div>
+                    <figcaption>
+                      <h2>Bill</h2>
+                      <p>Development</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure>
+                    <div>
+                      <div></div> 
+                    </div>
+                    <figcaption>
+                      <h2>Lorraine</h2>
+                      <p>Front-End Development</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure>
+                    <div>
+                      <div></div> 
+                    </div>
+                    <figcaption>
+                      <h2>Wesley</h2>
+                      <p>Marketing Lead</p>
+                    </figcaption>
+                  </figure>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+      </section>
     <!---->
     
     <!---->
@@ -377,31 +460,31 @@
             <div class="contact-form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="process.php" method="post">
+              <form action="" method="post" role="form" class="contactForm">
                 <div class="col-md-6 padding-right-zero">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                     <div class="validation"></div>
                   </div>
-                  <input type="submit" class="btn btn-primary btn-submit" name="submit" value="SEND NOW">
+                  <button type="submit" class="btn btn-primary btn-submit">SEND NOW</button>
                 </div>
               </form>
         </div>
@@ -432,6 +515,9 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
+  <script src="js/team.js"></script>
 
 </body>
 </html>
