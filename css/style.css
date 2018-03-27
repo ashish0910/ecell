@@ -494,7 +494,7 @@ TESTIMONIAL
 #testimonial{
   background-image: url(https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=613e60e84c5111cb2753536993debf0a);
   background-size: cover;
-  padding: 5rem;  
+  padding: 8rem;  
 	color:#444;
 	font:300 18px/18px Roboto, sans-serif;
 }
@@ -779,6 +779,7 @@ contact
 
 #contact {
   background-color:#005792;
+  padding:8rem;
 }
 
 .logo-box {
@@ -872,7 +873,12 @@ contact
 ***********************************/
 
 #footer {
-  padding: 20px 0px;
+  padding: 20px 20px;
+  background-color: #282D4F;
+}
+
+.footer-message{
+  color: #48C0D3;
 }
 
 .scrollToTop {
