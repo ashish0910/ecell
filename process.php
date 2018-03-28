@@ -19,8 +19,9 @@
      }
      
      $result = $conn->query($query) ;
-     if($result){
-         echo "inserted";
+          if($result){
+         header("location: index.php");
+         $_SESSION['query'] = "done" ;
      }
     if(!$result){
         echo "bug";
