@@ -421,7 +421,8 @@ ul.service-list li i {
   display: block;
   position: relative;
   z-index: 10;
-  margin: -15px 0
+  margin: -15px 0;
+
 }
 
 .portfolio-item figure figcaption {
@@ -430,23 +431,39 @@ ul.service-list li i {
   z-index: 5;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+}
+
+.figcaption-1{
+  background-image: linear-gradient(to right bottom, #ea4c4c, #c14545);
+}
+
+.figcaption-2{
+  background-image: linear-gradient(to right bottom, #005792, #00204A);
+}
+
+.figcaption-3{
+  background-image: linear-gradient(to right bottom, #35B0AB, #226B80);
 }
 
 .portfolio-item figure h2 {
   font-family: 'Fira Sans', sans-serif;
   color: #fff;
-  font-size: 20px;
-  text-align: left;
-  padding-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 2px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .portfolio-item figure p {
   display: block;
   line-height: 18px;
   margin: 0;
+  font-size: 15px;
   color: #fff;
-  text-align: left
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .portfolio-item figure figcaption {
@@ -460,10 +477,11 @@ ul.service-list li i {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  transition: all .8s;
   text-align: center;
+  /* -webkit-box-shadow: 0 1rem 5rem #888; */
 }
 
 .portfolio-item figure img {

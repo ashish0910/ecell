@@ -167,6 +167,7 @@
 
 .btn:link, .btn:visited {
 	text-transform: uppercase;
+	font-family: 500;
 	text-decoration: none;
 	display: inline-block;
 	padding: 1rem 3rem;
