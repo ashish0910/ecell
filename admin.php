@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php session_start(); 
+if(isset($_SESSION)){
+    if(isset($_SESSION['user'])) {
+        if($_SESSION['user']!="true") {header("location: login.php");}
+    } else {header("location: login.php");}
+} else {
+    header("location: login.php");
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,7 +32,10 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="addblog.php">Add Blog</a>
-  </li>  
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="logout.php">Logout</a>
+  </li>    
 </ul>
     <div class="container">
     <br>
@@ -59,8 +70,9 @@
             $post_id=$row['id'] ; 
 
 ?>
-                              
-                           <div class="container">
+                    
+                                        
+                    <div class="container">
                     
                     <h4>
                         <a href="#">Name:<?php echo $post_name ?></a>
@@ -81,6 +93,7 @@
                     <a href="deletereply.php?id=<?php echo $post_id ?>"><input type="submit" class="btn btn-primary" value="Delete"></a>
                     <br>
                     </div>   
+                    <br>
             <?php
         }    
 }

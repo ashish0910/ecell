@@ -1,8 +1,15 @@
+<?php session_start(); 
+if(isset($_SESSION)){
+    if(isset($_SESSION['user'])) {
+        if($_SESSION['user']!="true") {header("location: login.php");}
+    } else {header("location: login.php");}
+} else {
+    header("location: login.php");
+}
+?>
 <?php
     
-    require_once('db.php');
-    session_start();
-    
+    require_once('db.php');    
     
     if(isset($_POST)){
         $author = $_POST['author'];
