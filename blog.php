@@ -1,30 +1,4 @@
-<!-- Backend start -->
-<!-- <?php
-    require_once('db.php');    
-
-
-    if ($conn->connect_errno) {
-    printf("Connect failed: %s\n", $conn->connect_error);
-    exit();
-}
-
-    $query = "SELECT * FROM posts ORDER by id DESC";
-
-    if ($result = $conn->query($query)) {
-
-        /* fetch associative array */
-        while ($row = $result->fetch_assoc()) {
-            $post_title=$row['title'] ;
-            $post_author=$row['author'] ;
-            $post_content=$row['content'] ;
-            $post_image=$row['image'] ;
-            $post_summary=$row['summary'] ;
-            $post_date=$row['date'] ;
-            $post_id=$row['id'] ; 
-?>
- -->
- <!-- backend end -->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <body lang="en">
 <head>
   <meta charset="utf-8">
@@ -59,6 +33,32 @@
       </div>
     </div>
 </header>
+
+ <?php
+    require_once('db.php');    
+
+
+    if ($conn->connect_errno) {
+    printf("Connect failed: %s\n", $conn->connect_error);
+    exit();
+}
+
+    $query = "SELECT * FROM posts ORDER by id DESC";
+
+    if ($result = $conn->query($query)) {
+
+        /* fetch associative array */
+        while ($row = $result->fetch_assoc()) {
+            $post_title=$row['title'] ;
+            $post_author=$row['author'] ;
+            $post_content=$row['content'] ;
+            $post_image=$row['image'] ;
+            $post_summary=$row['summary'] ;
+            $post_date=$row['date'] ;
+            $post_id=$row['id'] ; 
+?>          
+           
+           
             <!-- HTML/PHP for displaying blogs-->
 
                 <div class="container">

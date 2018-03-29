@@ -20,8 +20,11 @@
     <a class="nav-link" href="editblog.php">Edit blogs</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="">Link</a>
+    <a class="nav-link" href="admin.php">View Replies</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="addblog.php">Add Blog</a>
+  </li>  
 </ul>
     <div class="container">
     <br>
@@ -75,8 +78,8 @@
                     <hr>
                     <p>Content:<?php echo $post_message ; ?></p>
                     <hr>
-                    <a href="deletereply.php?id=<?php echo $post_id ?>"><input type="submit" class="btn btn-primary"></a>
-
+                    <a href="deletereply.php?id=<?php echo $post_id ?>"><input type="submit" class="btn btn-primary" value="Delete"></a>
+                    <br>
                     </div>   
             <?php
         }    
