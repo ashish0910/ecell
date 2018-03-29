@@ -498,8 +498,8 @@
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div>
-              <div class="alert alert-success" id="success-alert"><?php 
-                if(isset($_SESSION)){ echo "your message is sent" ; session_destroy() ; } ?></div>
+              <?php 
+                if(isset($_SESSION)){ ?> <div class="alert alert-success" id="success-alert">your message is sent</div> <?php } ?>
               <div id="errormessage"></div>
               <form action="process.php" method="post">
                 <div class="col-md-6 padding-right-zero">
