@@ -116,7 +116,7 @@ if(isset($_SESSION)){
         $image = $_POST['image'];
         $category = $_POST['category'];    
         
-        $query_add = "INSERT INTO `posts` (`id`, `title`, `image`, `author`, `content`, `category`, `summary`, `date`) VALUES (NULL, '$title', '$image', '$author', '$content', '$category', '$summary', CURRENT_TIMESTAMP)";
+        $query_add = "INSERT INTO `posts` (`id`, `title`, `image`, `author`, `content`, `category`, `summary`, `date`) VALUES (NULL, '$title', '$image', '$author', '$content', '$category', '$summary', CURRENT_TIMESTAMP) ";
         
         $result = mysqli_query($conn,$query_add);
         $_SESSION['editblog'] = "done" ;
