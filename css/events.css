@@ -233,9 +233,21 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
 	.col { margin: 1% 0 1% 0%;}
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%;}
+	.card { margin-bottom: 6rem;}
+	.card { margin-left: -4rem;}
+	.heading-secondary{margin: auto;}
+	.events{margin: auto;}
+	.card{margin:auto;}
+
+} */
+@media only screen and (max-width: 600px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%;}
+	.card{margin:auto;}
+	.heading-secondary{margin-bottom: -1rem;}
 }
 
  
