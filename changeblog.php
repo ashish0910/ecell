@@ -31,14 +31,11 @@ if(isset($_SESSION)){
   </li>
   <li class="nav-item">
     <a class="nav-link" href="addblog.php">Add Blog</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="logout.php">Logout</a>
-  </li>      
+  </li>  
 </ul>
     <div class="container">
     <br>
-    <h1>Add Blog</h1>
+    <h1>Edit Blog</h1>
     
     <br>
 <?php
@@ -49,36 +46,58 @@ if(isset($_SESSION)){
     exit();
 }
 ?>
-    <form action="addprocess.php" method="post">
+
+<?php  
+
+    if(isset($_GET)){
+        if(isset($_GET['id'])){
+            $d_id=$_GET['id'];
+            $d_query = "SELECT * from posts WHERE id='$d_id' ";
+            $result = mysqli_query($conn,$d_query);
+            $row = $result->fetch_assoc() ;
+            $post_title=$row['title'] ;
+            $post_author=$row['author'] ;
+            $post_content=$row['content'] ;
+            $post_image=$row['image'] ;
+            $post_summary=$row['summary'] ;
+            $post_date=$row['date'] ;
+            $post_id=$row['id'] ; 
+            $post_category=$row['category'];
+        }   
+    }
+
+?>
+  
+  <form method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="title">Title</label>
-      <input type="text" class="form-control" placeholder="Blog Title" name="title" required>
+      <input type="text" class="form-control" placeholder="Blog Title" name="title" value="<?php echo $post_title ; ?>" required>
     </div>
     <div class="form-group col-md-6">
       <label for="author">Author</label>
-      <input type="text" class="form-control" placeholder="Blog Author" name="author" required>
+      <input type="text" class="form-control" placeholder="Blog Author" name="author" value="<?php echo $post_author ; ?>" required>
     </div>
   </div>
   <div class="form-group">
     <label for="summary">Summary</label>
-    <input type="text" class="form-control" placeholder="Blog Summary" name="summary" required>
+    <input type="text" class="form-control" placeholder="Blog Summary" name="summary" value="<?php echo $post_summary ; ?>" required>
   </div>
   <div class="form-group">
     <label for="content">Content</label>
-    <textarea name="content" cols="30" rows="10" class="form-control" required></textarea>
+    <textarea name="content" cols="30" rows="10" class="form-control" required><?php echo $post_content ; ?></textarea>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="category">Category</label>
-      <input type="text" class="form-control" name="category" placeholder="Blog Category" required>
+      <input type="text" class="form-control" name="category" placeholder="Blog Category" value="<?php echo $post_category ; ?>" required>
     </div>
     <div class="form-group col-md-6">
       <label for="image">Image</label>
-      <input type="text" class="form-control" name="image" placeholder="Name of image in img folder" required>
+      <input type="text" class="form-control" name="image" placeholder="Name of image in img folder"  value="<?php echo $post_image ; ?>" required>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary" name="submit">Add</button>
+  <button type="submit" class="btn btn-primary" name="change">Change</button>
 </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -87,4 +106,27 @@ if(isset($_SESSION)){
   </body>
 </html>
 
+<?php 
+    if(isset($_POST)){
+        if(isset($_POST['change']))
+        {$author = $_POST['author'];
+        $title = $_POST['title'];
+        $summary = $_POST['summary'];
+        $content = $_POST['content'];
+        $image = $_POST['image'];
+        $category = $_POST['category'];    
+        
+        $query_add = "INSERT INTO `posts` (`id`, `title`, `image`, `author`, `content`, `category`, `summary`, `date`) VALUES (NULL, '$title', '$image', '$author', '$content', '$category', '$summary', CURRENT_TIMESTAMP) ";
+        
+        $result = mysqli_query($conn,$query_add);
+        $_SESSION['editblog'] = "done" ;
+        header("location: editblog.php");
+    }
+    if(!$result){
+        echo "bug";
+    }}
+    else{
+        echo "no";
+    }
 
+?>

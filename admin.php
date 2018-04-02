@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php session_start(); 
+if(isset($_SESSION)){
+    if(isset($_SESSION['user'])) {
+        if($_SESSION['user']!="true") {header("location: login.php");}
+    } else {header("location: login.php");}
+} else {
+    header("location: login.php");
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,7 +32,10 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="addblog.php">Add Blog</a>
-  </li>  
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="logout.php">Logout</a>
+  </li>    
 </ul>
     <div class="container">
     <br>
@@ -44,7 +55,11 @@
          <?php
          $_SESSION['delete']="ok";}
     }
-      
+    if(isset($_SESSION['mail'])){
+        if($_SESSION['mail']=="done") { ?> <div class="alert alert-success container">Mail Sent</div> 
+         <?php
+         $_SESSION['mail']="ok";}
+    }      
       $r_query = "SELECT * FROM `contact` WHERE `replied` = 'no'"; 
         if ($result = $conn->query($r_query)) {
 
@@ -59,9 +74,8 @@
             $post_id=$row['id'] ; 
 
 ?>
-                              
-                           <div class="container">
                     
+                    <div class="container">                    
                     <h4>
                         <a href="#">Name:<?php echo $post_name ?></a>
                     </h4>
@@ -79,14 +93,15 @@
                     <p>Content:<?php echo $post_message ; ?></p>
                     <hr>
                     <a href="deletereply.php?id=<?php echo $post_id ?>"><input type="submit" class="btn btn-primary" value="Delete"></a>
+                    <a href="mail.php?id=<?php echo $post_id ?>&&to=<?php echo $post_email ?>"><input type="submit" class="btn btn-primary" value="Mail" style="margin-left:10px;"></a>
                     <br>
                     </div>   
+                    <br>
             <?php
         }    
 }
 
 ?>                    
-   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

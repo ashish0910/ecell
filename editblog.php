@@ -1,3 +1,12 @@
+<?php session_start(); 
+if(isset($_SESSION)){
+    if(isset($_SESSION['user'])) {
+        if($_SESSION['user']!="true") {header("location: login.php");}
+    } else {header("location: login.php");}
+} else {
+    header("location: login.php");
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,19 +32,26 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="addblog.php">Add Blog</a>
-  </li>  
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="logout.php">Logout</a>
+  </li>      
 </ul>
     <div class="container">
     <br>
     <h1>Edit blogs</h1>
     </div>
  <?php 
-          session_start();
           if(isset($_SESSION['addblog'])){
           if($_SESSION['addblog']=="done") { ?> <div class="alert alert-success container">Added Blog</div> 
           <?php
           $_SESSION['addblog']="ok";}
           }
+          if(isset($_SESSION['editblog'])){
+          if($_SESSION['editblog']=="done") { ?> <div class="alert alert-success container">Changed Blog</div> 
+          <?php
+          $_SESSION['editblog']="ok";}
+          }      
           if(isset($_SESSION['blogdelete'])){
           if($_SESSION['blogdelete']=="done") { ?> <div class="alert alert-danger container">Deleted</div> 
           <?php
@@ -80,7 +96,7 @@
                 <p><?php echo $post_content ; ?></p>
                 <hr>
                 <a href="deleteblog.php?id=<?php echo $post_id; ?>"><input class="btn btn-primary" name="delete" type="submit" value="Delete"></a>
-                <a><input class="btn btn-primary" name="edit" type="submit" value="Edit" style="margin-left:10px;"></a>
+                <a href="changeblog.php?id=<?php echo $post_id; ?>"><input class="btn btn-primary" name="edit" type="submit" value="Edit" style="margin-left:10px;"></a>
                 <br>         
                 </div>
             <?php
