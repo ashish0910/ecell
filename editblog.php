@@ -57,7 +57,6 @@ if(isset($_SESSION)){
           <?php
           $_SESSION['blogdelete']="ok";}     } 
 ?>
-
 <?php
 
     require_once('db.php');
@@ -99,10 +98,10 @@ if(isset($_SESSION)){
                 <a href="changeblog.php?id=<?php echo $post_id; ?>"><input class="btn btn-primary" name="edit" type="submit" value="Edit" style="margin-left:10px;"></a>
                 <br>         
                 </div>
+                <br>
             <?php
         }    
 }
-
 ?>              
    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

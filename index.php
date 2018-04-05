@@ -54,10 +54,23 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+  <style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(img/Preloader_3.gif) center no-repeat #fff;
+}
+</style>
 </head>
 
 <body>
-  <div class="loader"></div>
+  <div class="se-pre-con"></div>
   <div id="myDiv">
     <!--HEADER-->
     <div class="header">
@@ -331,7 +344,7 @@
       </div>
     </section>
     
-    <section id="testimonial" class="testimonial">
+    <section id="testimonial">
         <div class="author-quote-wrap">
             <input class="toggle-quote" type="radio" id="AQ-1" name="quote" checked>
             <div class="author-quote">
@@ -585,8 +598,17 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
   <script src="js/team.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+
+  $(window).load(function() {
+    
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
 </body>
 </html>
