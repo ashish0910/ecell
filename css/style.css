@@ -1046,6 +1046,12 @@ Responsive media queries
   }
 }
 
+@media only screen and (max-width: 600px) {
+    .logo-box{margin:auto;}
+    .logo-box{margin-left: -.8rem;}
+    .logo{height: 10rem;}
+}
+
 /*  
 
 social media buttons
@@ -1085,6 +1091,10 @@ social media buttons
 .fa-instagram {
   background: #0e6caf;
   color: white;
+}
+
+.fa-angle-down{
+  margin-left:-3.3rem;
 }
 
 

@@ -4,29 +4,29 @@
       if ($conn->connect_errno) {
         printf("Connect failed: %s\n", $conn->connect_error);
         exit();
-      }      
+      }
       if(isset($_POST)){
-          
+
           if(isset($_POST['sendreply'])) {
           $name = $_POST['name'];
           $email = $_POST['email'];
           $message = $_POST['message'];
           $subject = $_POST['subject'];
-          
+
           $query = "INSERT INTO contact (name, subject, email, message)
           VALUES ('".$name."','".$subject."','".$email."','".$message."')";
           $result = $conn->query($query) ;
           if($result){
-            $_SESSION['query'] = "done" ;      
+            $_SESSION['query'] = "done" ;
           }
           if(!$result){
             echo "bug";
-          }          
+          }
           }
           }
 
 
-?>     
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,11 +73,11 @@
                 </button>
                   <p><a class="navbar-brand" href="#">e<span class="logo-dec">cell</span></a></p>
               </div>
-             
+
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#main-header">Home</a></li>
-                  <li class=""><a href="#feature">About</a></li>  
+                  <li class=""><a href="#feature">About</a></li>
                   <li class=""><a href="#events">events</a></li>
                   <li class=""><a href="#portfolio">Startups</a></li>
                   <li class=""><a href="#testimonial">Testimonial</a></li>
@@ -210,7 +210,7 @@
                     <li>28th MARCH</li>
                     <li>10:30 AM</li>
                     <li>E BLOCK AUDI</li>
-                    <li>2 MEMBERS TEAM</li>                    
+                    <li>2 MEMBERS TEAM</li>
                   </ul>
                 </div>
             </div>
@@ -220,7 +220,7 @@
                   <p class="card__heading--min">ecell</p>
                   <p class="card__heading--max">zenith</p>
                 </div>
-              <a href="#" class="btn btn--white">Book Now!</a>  
+              <a href="#" class="btn btn--white">Book Now!</a>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@
                       <li>28th MARCH</li>
                       <li>10:30 AM</li>
                       <li>E BLOCK AUDI</li>
-                      <li>2 MEMBERS TEAM</li>                    
+                      <li>2 MEMBERS TEAM</li>
                     </ul>
                   </div>
               </div>
@@ -249,7 +249,7 @@
                     <p class="card__heading--min">ecell</p>
                     <p class="card__heading--max">zenith</p>
                   </div>
-                <a href="#" class="btn btn--white">Book Now!</a>  
+                <a href="#" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
           </div>
@@ -268,7 +268,7 @@
                       <li>28th MARCH</li>
                       <li>10:30 AM</li>
                       <li>E BLOCK AUDI</li>
-                      <li>2 MEMBERS TEAM</li>                    
+                      <li>2 MEMBERS TEAM</li>
                     </ul>
                   </div>
               </div>
@@ -278,7 +278,7 @@
                     <p class="card__heading--min">ecell</p>
                     <p class="card__heading--max">zenith</p>
                   </div>
-                <a href="#" class="btn btn--white">Book Now!</a>  
+                <a href="#" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
           </div>
@@ -295,15 +295,15 @@
           <div class="col-md-12 text-center">
             <h2 class="service-title pad-bt15 heading-secondary">Our Recent Startups</h2>
             <!-- <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p> -->
-            <hr class="bottom-line">
+            <!-- <hr class="bottom-line"> -->
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
               <img src="img/s1.png" class="startup-img img-responsive">
               <figcaption class="figcaption-1">
                 <h2 class="startup__header">Xampaperz</h2>
-                <p class="startup__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>                 
-                <a href="http://www.xampaperz.com" target="_blank" class="btn btn--white">EXPLORE US!</a>  
+                <p class="startup__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                <a href="http://www.xampaperz.com" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
           </div>
@@ -313,7 +313,7 @@
               <figcaption class="figcaption-2">
                 <h2>junksquare</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-                <a href="http://junksquare.com" target="_blank" class="btn btn--white">EXPLORE US!</a>  
+                <a href="http://junksquare.com" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
           </div>
@@ -323,14 +323,14 @@
               <figcaption class="figcaption-3">
                 <h2>News HQ</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-                <a href="http://newshq.io/" target="_blank" class="btn btn--white">EXPLORE US!</a>  
+                <a href="http://newshq.io/" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section id="testimonial" class="testimonial">
         <div class="author-quote-wrap">
             <input class="toggle-quote" type="radio" id="AQ-1" name="quote" checked>
@@ -347,7 +347,7 @@
                 <div class="quote-author animated lightSpeedIn">kunal bahl (snapdeal)</div>
               </div>
             </div>
-          
+
             <input class="toggle-quote" type="radio" id="AQ-2" name="quote">
             <div class="author-quote">
               <div class="pull-left author-photo photo-b animated bounceInLeft">
@@ -362,7 +362,7 @@
                 <div class="quote-author animated lightSpeedIn">Vijay shekhar sharma (paytm)</div>
               </div>
             </div>
-          
+
             <input class="toggle-quote" type="radio" id="AQ-3" name="quote">
             <div class="author-quote">
               <div class="pull-left author-photo photo-c animated bounceInLeft">
@@ -377,7 +377,7 @@
                 <div class="quote-author animated lightSpeedIn">Shashank nd (practo)</div>
               </div>
             </div>
-          
+
             <input class="toggle-quote" type="radio" id="AQ-4" name="quote">
             <div class="author-quote">
               <div class="pull-left author-photo photo-d animated bounceInLeft">
@@ -392,7 +392,7 @@
                 <div class="quote-author animated lightSpeedIn">rahul yadav (housing)</div>
               </div>
             </div>
-          
+
             <input class="toggle-quote" type="radio" id="AQ-5" name="quote">
             <div class="author-quote">
               <div class="pull-left author-photo photo-e animated bounceInLeft">
@@ -415,7 +415,7 @@
         <div class="slider--teams">
             <div class="slider--teams__team">
               <ul id="list" class="cf">
-                
+
                 <li>
                   <figure class="active">
                     <div>
@@ -430,7 +430,7 @@
                     </figcaption>
                   </figure>
                 </li>
-                
+
                 <li>
                   <figure>
                     <div>
@@ -444,7 +444,7 @@
                     </figcaption>
                   </figure>
                 </li>
-                
+
                 <li>
                   <figure>
                     <div>
@@ -458,7 +458,7 @@
                     </figcaption>
                   </figure>
                 </li>
-                
+
                 <li>
                   <figure>
                     <div>
@@ -472,11 +472,11 @@
                     </figcaption>
                   </figure>
                 </li>
-                
+
                 <li>
                   <figure>
                     <div>
-                      <div></div> 
+                      <div></div>
                     </div>
                     <figcaption>
                       <h2>Lorraine</h2>
@@ -486,11 +486,11 @@
                     </figcaption>
                   </figure>
                 </li>
-                
+
                 <li>
                   <figure>
                     <div>
-                      <div></div> 
+                      <div></div>
                     </div>
                     <figcaption>
                       <h2>Wesley</h2>
@@ -506,7 +506,7 @@
           </div>
       </section>
     <!---->
-    
+
     <!---->
     <section id="contact" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
@@ -527,7 +527,7 @@
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div>
-              <?php 
+              <?php
                 if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?>
               <div id="errormessage"></div>
               <form method="post">
@@ -558,8 +558,8 @@
                 </div>
               </form>
         </div>
-      </div>  
-    </section>   
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer id="footer">
       <div class="container">
