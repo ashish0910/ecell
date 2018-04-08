@@ -6,7 +6,56 @@ if(isset($_SESSION)){
 } else {
     header("location: login.php");
 }
-?><!doctype html>
+?>
+<?php
+
+    require_once('db.php');
+    if ($conn->connect_errno) {
+    printf("Connect failed: %s\n", $conn->connect_error);
+    exit();
+}
+?>
+<?php  
+
+    if(isset($_GET)){
+        if(isset($_GET['id'])){
+            $d_id=$_GET['id'];
+            $d_query = "SELECT * from posts WHERE id='$d_id' ";
+            $result = mysqli_query($conn,$d_query);
+            $row = $result->fetch_assoc() ;
+            $post_title=$row['title'] ;
+            $post_author=$row['author'] ;
+            $post_content=$row['content'] ;
+            $post_image=$row['image'] ;
+            $post_summary=$row['summary'] ;
+            $post_date=$row['date'] ;
+            $post_id=$row['id'] ; 
+            $post_category=$row['category'];
+        }   
+    }
+
+?>
+<?php 
+    if(isset($_POST)){
+        if(isset($_POST['change']))
+        {$author = $_POST['author'];
+        $title = $_POST['title'];
+        $summary = $_POST['summary'];
+        $content = $_POST['content'];
+        $image = $_POST['image'];
+        $category = $_POST['category'];    
+        
+        $query_add = "UPDATE `posts` SET title='$title' , image='$image' , author='$author' , content='$content' , summary='$summary' , category='$category' WHERE id='$d_id' ";
+        
+        $result = mysqli_query($conn,$query_add);
+        $_SESSION['editblog'] = "done" ;
+        header("location: editblog.php");
+    }
+   }
+    
+
+?>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -38,35 +87,9 @@ if(isset($_SESSION)){
     <h1>Edit Blog</h1>
     
     <br>
-<?php
 
-    require_once('db.php');
-    if ($conn->connect_errno) {
-    printf("Connect failed: %s\n", $conn->connect_error);
-    exit();
-}
-?>
 
-<?php  
 
-    if(isset($_GET)){
-        if(isset($_GET['id'])){
-            $d_id=$_GET['id'];
-            $d_query = "SELECT * from posts WHERE id='$d_id' ";
-            $result = mysqli_query($conn,$d_query);
-            $row = $result->fetch_assoc() ;
-            $post_title=$row['title'] ;
-            $post_author=$row['author'] ;
-            $post_content=$row['content'] ;
-            $post_image=$row['image'] ;
-            $post_summary=$row['summary'] ;
-            $post_date=$row['date'] ;
-            $post_id=$row['id'] ; 
-            $post_category=$row['category'];
-        }   
-    }
-
-?>
   
   <form method="post">
   <div class="form-row">
@@ -106,27 +129,4 @@ if(isset($_SESSION)){
   </body>
 </html>
 
-<?php 
-    if(isset($_POST)){
-        if(isset($_POST['change']))
-        {$author = $_POST['author'];
-        $title = $_POST['title'];
-        $summary = $_POST['summary'];
-        $content = $_POST['content'];
-        $image = $_POST['image'];
-        $category = $_POST['category'];    
-        
-        $query_add = "INSERT INTO `posts` (`id`, `title`, `image`, `author`, `content`, `category`, `summary`, `date`) VALUES (NULL, '$title', '$image', '$author', '$content', '$category', '$summary', CURRENT_TIMESTAMP) ";
-        
-        $result = mysqli_query($conn,$query_add);
-        $_SESSION['editblog'] = "done" ;
-        header("location: editblog.php");
-    }
-    if(!$result){
-        echo "bug";
-    }}
-    else{
-        echo "no";
-    }
 
-?>
