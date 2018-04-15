@@ -425,6 +425,12 @@ ul.service-list li i {
 
 }
 
+.startup-img{
+  width:92%;
+  height: 58%;
+  
+}
+
 .portfolio-item figure figcaption {
   display: block;
   position: absolute;
@@ -469,7 +475,7 @@ ul.service-list li i {
 .portfolio-item figure figcaption {
   top: 0;
   left: 0;
-  width: 100%;
+  width: 92%;
   height: 100%;
   padding: 59px 30px;
   background-color: #BE9E21;
@@ -969,12 +975,14 @@ Responsive media queries
 ***********************************/
 
 @media (min-width: 768px) and (max-width: 980px) {
-  .service-item, .blog-sec, .wrap-item, .loction-info {
+  .service-item, .blog-sec, .wrap-item, .loction-info,{
     margin-bottom: 15px;
   }
   .portfolio-item figure figcaption {
     padding: 55px 30px;
   }
+
+
   .padding-right-zero {
     padding-right: 15px !important;
   }
@@ -984,6 +992,8 @@ Responsive media queries
   .service-item, .blog-sec, .wrap-item, .loction-info {
     margin-bottom: 15px;
   }
+
+  
 }
 
 @media (min-width: 20px) and (max-width: 450px) {
@@ -1024,9 +1034,10 @@ Responsive media queries
   }
   .portfolio-item figure figcaption {
     padding: 30px 30px;
+    width: 90%;
   }
   .padding-right-zero {
-    padding-right: 15px !important;
+    padding-right: 10px !important;
   }
   .portfolio-item figure p {
     font-size: 14px;
@@ -1034,12 +1045,12 @@ Responsive media queries
   .portfolio-item figure h2 {
     font-size: 18px;
   }
-  .testimonia  {
+  /* .testimonial  {
     font-size: 14px;
     line-height: 22px;
     margin: 10px 0;
     padding: 0 40px;
-  }
+  } */
   .navbar-default .navbar-nav>li>a {
     line-height: 22px;
     text-align: center;
@@ -1047,10 +1058,32 @@ Responsive media queries
 }
 
 @media only screen and (max-width: 600px) {
-    .logo-box{margin:auto;}
-    .logo-box{margin-left: -.8rem;}
-    .logo{height: 10rem;}
+    
+    .logo-box{margin-left:1.5rem;
+              margin-top: .7rem;
+              margin-bottom: 1rem;}
+    .logo{height: 13rem;}
 }
+
+@media only screen and (max-width: 600px) {
+      .startup-img{
+        height:70%;
+        width: 98%;
+      }
+      .portfolio-item figure figcaption{
+        width:98%;
+      }
+      #portfolio{
+        padding: 1rem;
+      }
+
+      #contact{
+        padding:4rem;
+      }
+      
+}
+
+
 
 /*  
 

@@ -311,7 +311,7 @@
             <!-- <hr class="bottom-line"> -->
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
+            <figure class="portfolio">
               <img src="img/s1.png" class="startup-img img-responsive">
               <figcaption class="figcaption-1">
                 <h2 class="startup__header">Xampaperz</h2>
@@ -321,7 +321,7 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
+            <figure class="portfolio">
               <img src="img/s2.png" class="startup-img">
               <figcaption class="figcaption-2">
                 <h2>junksquare</h2>
@@ -331,7 +331,7 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
+            <figure class="portfolio">
               <img src="img/s3.png" class="startup-img">
               <figcaption class="figcaption-3">
                 <h2>News HQ</h2>
@@ -545,13 +545,13 @@
                 if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?>
               <div id="errormessage"></div>
               <form method="post">
-                <div class="col-md-6 padding-right-zero">
+                <div class="col-md-12 ">
                   <div class="form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
                     <div class="validation"></div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-group">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
                     <div class="validation"></div>

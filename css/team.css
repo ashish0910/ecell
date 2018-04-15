@@ -1,6 +1,6 @@
 #team{
  
-  padding: 8rem;
+  padding: 2rem;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +16,9 @@
     margin-top: 5rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #0081C6;
+    background-image: linear-gradient(to right, #3498DB, #005792);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 ul li {
