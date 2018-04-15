@@ -2,9 +2,9 @@
  
   padding: 2rem;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility; */
   background-image: linear-gradient(to right bottom, rgba(245, 239, 239, 0.6), rgba(208, 203, 203, 0.6)), url(https://images.unsplash.com/photo-1518600570419-81324064e9ae?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=a8666e8f174ac2400587ffecd6f013e9);
   background-size: cover;
 }

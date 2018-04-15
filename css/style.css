@@ -427,7 +427,7 @@ ul.service-list li i {
 
 .startup-img{
   width:92%;
-  height: 58%;
+  height:390px;
   
 }
 
@@ -1059,8 +1059,8 @@ Responsive media queries
 
 @media only screen and (max-width: 600px) {
     
-    .logo-box{margin-left:1.5rem;
-              margin-top: .7rem;
+    .logo-box{margin-left:1.3rem;
+              margin-top: .2rem;
               margin-bottom: 1rem;}
     .logo{height: 13rem;}
 }
@@ -1079,6 +1079,22 @@ Responsive media queries
 
       #contact{
         padding:4rem;
+      }
+
+      #testimonial{
+        padding: 1rem 0;      
+      }
+
+      .author-quote-wrap{
+        width:200%;
+      }
+
+      .quote-content .quote-text{
+        font-size: 16.8px;
+      }
+
+      .quote-content .quote-author{
+        font-size: 14px;
       }
       
 }
