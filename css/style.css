@@ -5,13 +5,20 @@
     Author URL: https://bootstrapmade.com
 */
 
-body {
+
+body{
+  margin: 0;
+  padding: 0;
   line-height: 1.4;
   font-family: 'Roboto', sans-serif;
   color: #67696c;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  
+}
+
+.site-wrapper{
   overflow-x: hidden;
 }
 
@@ -1078,11 +1085,11 @@ Responsive media queries
       }
 
       #contact{
-        padding:4rem;
+        padding:6rem;
       }
 
       #testimonial{
-        padding: 1rem 0;      
+        padding: 1rem 0rem;      
       }
 
       .author-quote-wrap{
@@ -1098,6 +1105,7 @@ Responsive media queries
       }
       
 }
+
 
 
 
