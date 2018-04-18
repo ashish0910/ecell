@@ -1,7 +1,8 @@
 #myFooter {
-    background-color: #182c39;
+    background-color: #005792;
     color: white;
-    padding-top: 20px;
+    padding-top: 50px;
+    margin-top: -6rem;
 }
 
 #map-container {
@@ -82,7 +83,22 @@
 }
 
 #myFooter .fa-facebook:focus {
-    color: #2b55ff;
+    color: rgb(23, 146, 160);
+}
+#myFooter .fa-linkedin:hover {
+    color: rgb(23, 146, 160);
+}
+
+#myFooter .fa-instagram:focus {
+    color:orangered;
+}
+#myFooter .fa-instagram:hover {
+    color: orangered;
+}
+
+
+#myFooter .fa-facebook:focus {
+    color: ;
 }
 
 #myFooter .fa-google-plus:hover {
