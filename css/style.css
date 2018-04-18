@@ -1,9 +1,4 @@
-/*
-    Theme Name: Baker
-    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
+
 
 
 body{
@@ -996,7 +991,7 @@ Responsive media queries
 }
 
 @media (min-width: 451px) and (max-width: 767px) {
-  .service-item, .blog-sec, .wrap-item, .loction-info {
+  .service-item, .blog-sec, .wrap-item, .loction-info, .events {
     margin-bottom: 15px;
   }
 
@@ -1086,6 +1081,12 @@ Responsive media queries
 
       #contact{
         padding:6rem;
+
+      }
+
+      #events{
+        padding:auto;
+        padding-bottom: 2rem;
       }
 
       #testimonial{

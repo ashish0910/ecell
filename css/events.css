@@ -251,7 +251,7 @@ body{
 	.col { margin: 1% 0 1% 0%;}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%;}
 	.card{margin-bottom: 8rem;}
-	.card{margin-left:-4rem;}
-	.heading-secondary{margin-left: -2.5rem;}
+	.card{margin-left:-3.5rem;}
+	.heading-secondary{margin-left:-1.8rem;}
   /* .author-quote{height: 2rem;} */
 }
