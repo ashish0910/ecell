@@ -1061,7 +1061,7 @@ Responsive media queries
 
 @media only screen and (max-width: 600px) {
     
-    .logo-box{margin-left:1.3rem;
+    .logo-box{margin-left:0rem;
               margin-top: .2rem;
               margin-bottom: 1rem;}
     .logo{height: 13rem;}
@@ -1076,7 +1076,12 @@ Responsive media queries
         width:98%;
       }
       #portfolio{
-        padding: 1rem;
+        
+        padding:1rem;
+      }
+
+      .bnr-sub-title{
+        margin-top: 6rem;
       }
 
       #contact{
@@ -1085,16 +1090,17 @@ Responsive media queries
       }
 
       #events{
-        padding:auto;
+        padding:2rem 6rem;
         padding-bottom: 2rem;
       }
 
       #testimonial{
-        padding: 1rem 0rem;      
+        padding:0;     
       }
 
       .author-quote-wrap{
-        width:500%;
+        width:200%;
+        margin: 5rem -1rem;
       }
 
       .quote-content .quote-text{
@@ -1104,6 +1110,7 @@ Responsive media queries
       .quote-content .quote-author{
         font-size: 14px;
       }
+
       
 }
 
