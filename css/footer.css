@@ -3,6 +3,7 @@
     color: white;
     padding-top: 50px;
     margin-top: -6rem;
+    z-index:1000;
 }
 
 #map-container {

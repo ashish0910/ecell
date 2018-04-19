@@ -87,7 +87,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                  <p><a class="navbar-brand" href="#">e<span class="logo-dec">cell</span></a></p>
+                  <p><a class="navbar-brand" href="#">z<span class="logo-dec">enith</span></a></p>
               </div>
 
               <div class="collapse navbar-collapse" id="myNavbar">
@@ -111,7 +111,9 @@
               <div class="banner-info text-center wow fadeIn delay-05s">
                 <h1 class="bnr-title">We are at Ecell GGSIPU</h1>
                 <h2 class="bnr-sub-title">Starting a new journey!!</h2>
-                <p class="bnr-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.</p>
+                <p class="bnr-para">Entrepreneurship Cell (E-cell), GGSIPU is a student’s organization dedicated to promote the<br> spirit of entrepreneurship among students where the young and the elderly<br> come together to take entrepreneurship a step ahead in India.
+
+                </p>
                 <div class="overlay-detail">
                   <a href="#feature"><i class="fa fa-angle-down"></i></a>
                 </div>
@@ -320,7 +322,8 @@
               <img src="img/s1.png" class="startup-img img-responsive">
               <figcaption class="figcaption-1">
                 <h2 class="startup__header">Xampaperz</h2>
-                <p class="startup__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                <p class="startup__detail">XAMPAPERZ is the platform that was designed solely for purpose of providing quality and adequate information about the College/University.
+                </p>
                 <a href="http://www.xampaperz.com" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
@@ -330,7 +333,8 @@
               <img src="img/s2.png" class="startup-img">
               <figcaption class="figcaption-2">
                 <h2>junksquare</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                <p>JUNKSQUARE creates and shares compelling visual posts that alter the way we live, love, work, play, think and feel.
+                </p>
                 <a href="http://junksquare.com" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
@@ -340,7 +344,7 @@
               <img src="img/s3.png" class="startup-img">
               <figcaption class="figcaption-3">
                 <h2>News HQ</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                <p>NEWS HQ is an Internet Media Company for the increasingly connected world. We believe in writing the truth and unbiased news and keeping people informed.</p>
                 <a href="http://newshq.io/" target="_blank" class="btn btn--white">EXPLORE US!</a>
               </figcaption>
             </figure>
@@ -536,7 +540,7 @@
         <div class="row">
           <div class="col-md-12 text-center white">
             <h2 class="service-title contact-header pad-bt15">Keep in touch with us</h2>
-            <p class="sub-title contact-header pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="sub-title contact-header pad-bt15">We at ZENITH strive to make future entrepreneurs, feel free<br> to reach us and share your valuable feedback.</p>
             <hr class="bottom-line white-bg">
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
