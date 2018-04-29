@@ -20,7 +20,7 @@
 
 <nav>
     <!-- <div class="logo"></div> -->
-    <p><a class="navbar-brand" href="index.php">e<span class="logo-dec">cell</span></a></p>
+    <p><a class="navbar-brand" href="index.php">z<span class="logo-dec">enith</span></a></p>
     <ul>
       <li><a class="nav-tag" href="index.php">HOME</a></li>
     </ul>
