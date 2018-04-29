@@ -1,32 +1,32 @@
-<!-- <?php
+<?php
       session_start();
       require_once('db.php');
       if ($conn->connect_errno) {
         printf("Connect failed: %s\n", $conn->connect_error);
         exit();
-      }
+      }      
       if(isset($_POST)){
-
+          
           if(isset($_POST['sendreply'])) {
           $name = $_POST['name'];
           $email = $_POST['email'];
           $message = $_POST['message'];
           $subject = $_POST['subject'];
-
+          
           $query = "INSERT INTO contact (name, subject, email, message)
           VALUES ('".$name."','".$subject."','".$email."','".$message."')";
           $result = $conn->query($query) ;
           if($result){
-            $_SESSION['query'] = "done" ;
+            $_SESSION['query'] = "done" ;      
           }
           if(!$result){
             echo "bug";
-          }
+          }          
           }
           }
 
 
-?> -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,12 +50,6 @@
   <link rel="stylesheet" href="css/team.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <!-- =======================================================
-    Theme Name: Baker
-    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
   <style>
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -550,8 +544,8 @@
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class>
-              <!-- <?php
-                if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?> -->
+               <?php 
+                if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?>
               <div id="errormessage"></div>
               <form method="post">
                 <div class="col-md-12 ">
