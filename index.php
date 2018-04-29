@@ -109,7 +109,7 @@
 
                 </p>
                 <div class="overlay-detail">
-                  <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                  <a href="index.html#feature"><i class="fa fa-angle-down"></i></a>
                 </div>
               </div>
             </div>
