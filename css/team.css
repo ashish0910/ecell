@@ -6,7 +6,7 @@
 h1.team-h1 {
   margin: 0;
   position: absolute;
-  top: -16px;
+  top: -20px;
   text-align: center;
   left: 40%; 
   font-family: georgia;
@@ -14,7 +14,7 @@ h1.team-h1 {
   text-transform: uppercase;
   background-color: white;
   padding: 0px 20px;
-  font-size: 30px;
+  font-size: 35px;
   color:#3498DB; 
 }
 
@@ -134,7 +134,7 @@ h1.team-h1 {
     position: absolute;
     top: -16px;
     text-align: center;
-    left: 24%;
+    left: 22%;
     font-family: georgia;
     font-style: italic;
     background-color: white;

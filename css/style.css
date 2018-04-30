@@ -1048,12 +1048,7 @@ Responsive media queries
   .portfolio-item figure h2 {
     font-size: 18px;
   }
-  /* .testimonial  {
-    font-size: 14px;
-    line-height: 22px;
-    margin: 10px 0;
-    padding: 0 40px;
-  } */
+  
   .navbar-default .navbar-nav>li>a {
     line-height: 22px;
     text-align: center;
