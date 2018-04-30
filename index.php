@@ -109,7 +109,7 @@
 
                 </p>
                 <div class="overlay-detail">
-                  <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                  <a href="index.html#feature"><i class="fa fa-angle-down"></i></a>
                 </div>
               </div>
             </div>
@@ -431,7 +431,7 @@
 
     
     <!-- Speaker 1 -->
-    <section class="cf team-container">
+    <section class="cf team-container" id="team">
       <h1 class="team-h1">Our Team</h1>
     
         <!-- member-->  
