@@ -1,6 +1,6 @@
 
 
-  /* Team Member CSS 
+  /* Team Member CSS
 ===========================*/
 
 h1.team-h1 {
@@ -8,14 +8,14 @@ h1.team-h1 {
   position: absolute;
   top: -20px;
   text-align: center;
-  left: 40%; 
+  left: 40%;
   font-family: georgia;
   font-style: italic;
   text-transform: uppercase;
   background-color: white;
   padding: 0px 20px;
   font-size: 35px;
-  color:#3498DB; 
+  color:#3498DB;
 }
 
 .cf:before,
@@ -45,7 +45,7 @@ h1.team-h1 {
   padding-bottom: 5em;
   margin-top: 3em;
   position: relative;
-  
+
 }
 
 .team-member{
@@ -74,8 +74,8 @@ h1.team-h1 {
 .email {
   color: #3498DB;
   font-size: 25px;
- 
-  
+
+
 }
 
 .profession{
@@ -88,7 +88,7 @@ h1.team-h1 {
 
 .team-member span {
   display: block;
- 
+
 }
 .team-photo {
   border-radius: 50%;
@@ -113,9 +113,9 @@ h1.team-h1 {
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 40px;
-    
+
   }
-  
+
 }
 
 
@@ -140,7 +140,7 @@ h1.team-h1 {
     background-color: white;
     padding: 0px 20px;
     font-size: 30px;
-    color:#3498DB; 
+    color:#3498DB;
   }
   .team-member h3,
   .team-member span {
@@ -149,5 +149,5 @@ h1.team-h1 {
 }
 
 
-/* ENDS Team Member CSS 
+/* ENDS Team Member CSS
 ===========================*/
