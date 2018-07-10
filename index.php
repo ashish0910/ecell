@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
       session_start();
       require_once('db.php');
       if ($conn->connect_errno) {
@@ -26,7 +26,7 @@
           }
 
 
-?>  -->
+?>  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -175,28 +175,24 @@
             <div class="service-item">
               <h3><span>D</span>esign And Developement</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
               <h3><span>W</span>ebsite Maintenance</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
               <h3><span>S</span>eo Optimization</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
               <h3><span>D</span>igital Marketing</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">Learn more...</a>
             </div>
           </div>
         </div>
@@ -446,7 +442,7 @@
 
         <!-- member-->
         <div class="team-member">
-        <img class="team-photo" src="img/b.jpg">
+        <img class="team-photo" src="https://specials-images.forbesimg.com/imageserve/5a942b7b31358e79a28a452b/416x416.jpg?background=000000&cropX1=285&cropX2=3498&cropY1=146&cropY2=3360">
           <h3>SAURABHA</h3>
           <span class="profession">MENTOR</span>
           <a class="email" href="mailto:email@something.com"><i class="linkedin icon"></i></a>
@@ -476,7 +472,7 @@
           <!-- member-->
 
           <div class="team-member">
-          <img class="team-photo" src="https://specials-images.forbesimg.com/imageserve/5a942b7b31358e79a28a452b/416x416.jpg?background=000000&cropX1=285&cropX2=3498&cropY1=146&cropY2=3360">
+          <img class="team-photo" src="img/b.jpg" >
             <h3>SANJAY MEENA</h3>
             <span class="profession">president</span>
             <a class="email" href="mailto:email@something.com"><i class="linkedin icon"></i></a>
@@ -502,7 +498,7 @@
               <div class="team-member">
                 <img class="team-photo" src="https://specials-images.forbesimg.com/imageserve/5a942b7b31358e79a28a452b/416x416.jpg?background=000000&cropX1=285&cropX2=3498&cropY1=146&cropY2=3360">
                 <h3>ASHISH AGGARWAL</h3>
-                <span class="profession">BACK-END DEVELOPER</span>
+                <span class="profession">Techinacal Team</span>
                 <a class="email" href="mailto:email@something.com"><i class="linkedin icon"></i></a>
                 <a class="email" href="mailto:email@something.com"><i class="facebook icon"></i></a>
               </div>
@@ -510,7 +506,7 @@
                 <div class="team-member">
                   <img class="team-photo" src="https://specials-images.forbesimg.com/imageserve/5a942b7b31358e79a28a452b/416x416.jpg?background=000000&cropX1=285&cropX2=3498&cropY1=146&cropY2=3360">
                   <h3>HARSH KASHYAP</h3>
-                  <span class="profession">Front-end Developer</span>
+                  <span class="profession">Techinacal Team</span>
                   <a class="email" href="mailto:email@something.com"><i class="linkedin icon"></i></a>
                   <a class="email" href="mailto:email@something.com"><i class="facebook icon"></i></a>
                 </div>
@@ -540,8 +536,8 @@
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class>
-               <!-- <?php
-                if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?> -->
+                <?php
+                if(isset($_SESSION)){ if(isset($_SESSION['query']))  { if($_SESSION['query']=="done") { $_SESSION['query']="ok"; ?> <div class="alert alert-success">your message is sent</div> <?php }}} ?> 
               <div id="errormessage"></div>
               <form method="post">
                 <div class="col-md-12 ">
